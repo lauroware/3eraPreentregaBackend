@@ -1,0 +1,49 @@
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <style>
+      body { font-family: Arial, sans-serif; background-color: #f1f1f1; margin:
+      0; padding: 0; } div { max-width: 400px; margin: 50px auto;
+      background-color: #fff; padding: 20px; border-radius: 4px; box-shadow: 0 0
+      10px rgba(0, 0, 0, 0.2); } h1 { text-align: center; color: #333; } form {
+      margin-top: 20px; } label { display: block; margin-bottom: 5px; color:
+      #333; } input { width: 100%; padding: 10px; margin-bottom: 20px; border:
+      1px solid #ccc; border-radius: 4px; font-size: 16px; }
+      input[type="submit"] { background-color: #4CAF50; color: white; border:
+      none; padding: 10px 20px; text-align: center; text-decoration: none;
+      display: inline-block; font-size: 16px; margin: 10px 0; cursor: pointer;
+      border-radius: 4px; } a { color: #4CAF50; text-decoration: none; } a:hover
+      { text-decoration: underline; } p { text-align: center; }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>Sign Up</h1>
+      <form id="registerForm">
+        <label>First Name</label>
+        <input name="first_name" />
+        <label>Last Name</label>
+        <input name="last_name" />
+        <br /><br />
+        <label>Email</label>
+        <input name="email" />
+        <label>Age</label>
+        <input name="age" />
+        <br /><br />
+        <label>Password</label>
+        <input type="password" name="password" />
+        <br /><br />
+        {{! <label>Rol</label>
+            <input name="role"> }}
+        <br /><br />
+        <input type="submit" value="Sign Up" />
+
+      </form>
+      <p>Already have an account? <a href="/login">Login here!</a></p>
+    </div>
+
+    <script src="/js/register.js"></script>
+  </body>
+</html>

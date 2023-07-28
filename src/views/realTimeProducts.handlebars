@@ -1,0 +1,88 @@
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Real Time Products</title>
+    <style>
+      body { font-family: Arial, sans-serif; background-color: #f1f1f1; margin:
+      0; padding: 0; } h1, h2 { text-align: center; background-color: #333;
+      color: white; padding: 10px; } form { max-width: 400px; margin: 20px auto;
+      background-color: #fff; padding: 20px; border-radius: 4px; } label {
+      display: block; margin-bottom: 5px; } input { width: 100%; padding: 10px;
+      margin-bottom: 20px; border: 1px solid #ccc; border-radius: 4px;
+      font-size: 16px; } input[type="submit"] { background-color: #4CAF50;
+      color: white; border: none; padding: 10px 20px; text-align: center;
+      text-decoration: none; display: inline-block; font-size: 16px; margin:
+      10px 0; cursor: pointer; border-radius: 4px; } table { width: 100%;
+      border-collapse: collapse; margin-top: 20px; } th, td { border: 1px solid
+      #ccc; padding: 8px; text-align: center; } th { background-color: #333;
+      color: white; }
+    </style>
+  </head>
+  <body>
+    <h1>Real Time Products</h1>
+
+    <h2>Agregar Producto</h2>
+    <form id="addForm" method="post" name="products">
+      <label>Título</label>
+      <input name="title" />
+
+      <label>Descripción</label>
+      <input name="description" />
+
+      <label>Precio</label>
+      <input name="price" type="number" />
+
+      <label>Código</label>
+      <input name="code" />
+
+      <label>Stock</label>
+      <input name="stock" type="number" />
+
+      <label>Categoría</label>
+      <input name="category" />
+
+      <input type="submit" value="Agregar" />
+    </form>
+
+    <h2>Eliminar Producto</h2>
+    <form id="deleteForm" method="post" name="products">
+      <div>
+        <label for="_id"><b>ID</b></label>
+        <input name="_id" />
+      </div>
+      <input type="submit" value="Eliminar" />
+    </form>
+
+    <h2>Productos</h2>
+    <table>
+      <tr>
+        <th>ID</th>
+        <th>Título</th>
+        <th>Descripción</th>
+        <th>Precio</th>
+        <th>Código</th>
+        <th>Stock</th>
+        <th>Categoría</th>
+        <th>Estado</th>
+      </tr>
+      <tbody id="productsNow">
+        {{#each products}}
+          <tr>
+            <td>{{this._id}}</td>
+            <td>{{this.title}}</td>
+            <td>{{this.description}}</td>
+            <td>{{this.price}}</td>
+            <td>{{this.code}}</td>
+            <td>{{this.stock}}</td>
+            <td>{{this.category}}</td>
+            <td>{{this.status}}</td>
+          </tr>
+        {{/each}}
+      </tbody>
+    </table>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/js/home.js"></script>
+  </body>
+</html>

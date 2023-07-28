@@ -1,0 +1,38 @@
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <style>
+      body { font-family: Arial, sans-serif; background-color: #f1f1f1; margin:
+      0; padding: 0; } div { max-width: 400px; margin: 50px auto;
+      background-color: #fff; padding: 20px; border-radius: 4px; box-shadow: 0 0
+      10px rgba(0, 0, 0, 0.2); } h1 { text-align: center; color: #333; } form {
+      margin-top: 20px; } label { display: block; margin-bottom: 5px; color:
+      #333; } input { width: 100%; padding: 10px; margin-bottom: 20px; border:
+      1px solid #ccc; border-radius: 4px; font-size: 16px; }
+      input[type="submit"] { background-color: #4CAF50; color: white; border:
+      none; padding: 10px 20px; text-align: center; text-decoration: none;
+      display: inline-block; font-size: 16px; margin: 10px 0; cursor: pointer;
+      border-radius: 4px; } a { color: #4CAF50; text-decoration: none; } a:hover
+      { text-decoration: underline; } p { text-align: center; }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>Login</h1>
+      <form id="loginForm">
+        <label>Email</label>
+        <input name="email" />
+        <br />
+        <label>Password</label>
+        <input name="password" type="password" />
+        <input type="submit" value="Login" />
+      </form>
+      <p><a href="/api/sessions/github">Iniciar sesión con GitHub</a></p>
+      <p>¿No tienes una cuenta? <a href="/register">Regístrate aquí</a></p>
+    </div>
+
+    <script src="/js/login.js"></script>
+  </body>
+</html>

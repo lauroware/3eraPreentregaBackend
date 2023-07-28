@@ -1,0 +1,262 @@
+[
+  {
+    "_id": {
+      "$oid": "6456be757c5909fc4c7ae735"
+    },
+    "title": "Producto de prueba 7",
+    "description": "Este es un producto de prueba",
+    "price": 150,
+    "thumbnail": "ruta/de/imagen",
+    "code": "ABC7",
+    "stock": 27,
+    "category": "primera",
+    "status": "a"
+  },
+  {
+    "_id": {
+      "$oid": "6456be757c5909fc4c7ae72f"
+    },
+    "title": "Producto de prueba 1",
+    "description": "Este es un producto de prueba",
+    "price": 300,
+    "thumbnail": "ruta/de/imagen",
+    "code": "ABC10",
+    "stock": 3,
+    "category": "primera",
+    "status": "a"
+  },
+  {
+    "_id": {
+      "$oid": "6456be757c5909fc4c7ae734"
+    },
+    "title": "Producto de prueba 6",
+    "description": "Este es un producto de prueba",
+    "price": 900,
+    "thumbnail": "ruta/de/imagen",
+    "code": "ABC6",
+    "stock": 4,
+    "category": "primera",
+    "status": "a"
+  },
+  {
+    "_id": {
+      "$oid": "6456be757c5909fc4c7ae736"
+    },
+    "title": "Producto de prueba 8",
+    "description": "Este es un producto de prueba",
+    "price": 360,
+    "thumbnail": "ruta/de/imagen",
+    "code": "ABC8",
+    "stock": 95,
+    "category": "primera",
+    "status": "a"
+  },
+  {
+    "_id": {
+      "$oid": "6456be757c5909fc4c7ae738"
+    },
+    "title": "Producto de prueba 10",
+    "description": "Este es un producto de prueba",
+    "price": 300,
+    "thumbnail": "ruta/de/imagen",
+    "code": "ABC10",
+    "stock": 3,
+    "category": "primera",
+    "status": "a"
+  },
+  {
+    "_id": {
+      "$oid": "6456be757c5909fc4c7ae732"
+    },
+    "title": "Producto de prueba 4",
+    "description": "Este es un producto de prueba",
+    "price": 400,
+    "thumbnail": "ruta/de/imagen",
+    "code": "ABC4",
+    "stock": 4,
+    "category": "primera",
+    "status": "a"
+  },
+  {
+    "_id": {
+      "$oid": "6456be757c5909fc4c7ae730"
+    },
+    "title": "Producto de prueba 2",
+    "description": "Este es un producto de prueba",
+    "price": 35,
+    "thumbnail": "ruta/de/imagen",
+    "code": "ABC2",
+    "stock": 10,
+    "category": "segunda",
+    "status": "a"
+  },
+  {
+    "_id": {
+      "$oid": "6456be757c5909fc4c7ae731"
+    },
+    "title": "Producto de prueba 3",
+    "description": "Este es un producto de prueba",
+    "price": 300,
+    "thumbnail": "ruta/de/imagen",
+    "code": "ABC3",
+    "stock": 4,
+    "category": "primera",
+    "status": "a"
+  },
+  {
+    "_id": {
+      "$oid": "6456be757c5909fc4c7ae733"
+    },
+    "title": "Producto de prueba 5",
+    "description": "Este es un producto de prueba",
+    "price": 2500,
+    "thumbnail": "ruta/de/imagen",
+    "code": "ABC5",
+    "stock": 12,
+    "category": "primera",
+    "status": "a"
+  },
+  {
+    "_id": {
+      "$oid": "6456be757c5909fc4c7ae737"
+    },
+    "description": "Este es un producto de prueba",
+    "price": 40,
+    "thumbnail": "ruta/de/imagen",
+    "code": "ABC9",
+    "stock": 25,
+    "category": "primera",
+    "title": "Producto de prueba 9",
+    "status": "a"
+  },
+  {
+    "_id": {
+      "$oid": "645fe0801c2dd9b9a20599fe"
+    },
+    "title": "Producto de prueba 11",
+    "description": "Este es un producto de prueba",
+    "price": 40,
+    "thumbnail": "ruta/de/imagen",
+    "code": "ABC9",
+    "stock": 25,
+    "category": "primera",
+    "status": "a"
+  },
+  {
+    "_id": {
+      "$oid": "645fe0881c2dd9b9a2059a02"
+    },
+    "title": "Producto de prueba 13",
+    "description": "Este es un producto de prueba",
+    "price": 40,
+    "thumbnail": "ruta/de/imagen",
+    "code": "ABC9",
+    "stock": 25,
+    "category": "primera",
+    "status": "a"
+  },
+  {
+    "_id": {
+      "$oid": "645ff44132ec5baaf49104a6"
+    },
+    "title": "Producto de prueba 13",
+    "description": "Este es un producto de prueba",
+    "price": 40,
+    "thumbnail": "ruta/de/imagen",
+    "code": "ABC9",
+    "stock": 25,
+    "category": "primera",
+    "status": "a"
+  },
+  {
+    "_id": {
+      "$oid": "645ff44532ec5baaf49104a8"
+    },
+    "title": "Producto de prueba 13",
+    "description": "Este es un producto de prueba",
+    "price": 40,
+    "thumbnail": "ruta/de/imagen",
+    "code": "ABC9",
+    "stock": 25,
+    "category": "primera",
+    "status": "a"
+  },
+  {
+    "_id": {
+      "$oid": "645ff44832ec5baaf49104aa"
+    },
+    "title": "Producto de prueba 13",
+    "description": "Este es un producto de prueba",
+    "price": 40,
+    "thumbnail": "ruta/de/imagen",
+    "code": "ABC9",
+    "stock": 25,
+    "category": "primera",
+    "status": "a"
+  },
+  {
+    "_id": {
+      "$oid": "645ff54c0a4ea208988233b7"
+    },
+    "title": "Producto de prueba 13",
+    "description": "Este es un producto de prueba",
+    "price": 40,
+    "thumbnail": "ruta/de/imagen",
+    "code": "ABC9",
+    "stock": 25,
+    "category": "primera",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "645ff7630a4ea208988233cb"
+    },
+    "title": "Producto de prueba 10",
+    "description": "Este es un producto de prueba",
+    "price": 40,
+    "thumbnail": "ruta/de/imagen",
+    "code": "ABC9",
+    "stock": 25,
+    "category": "primera",
+    "status": "a"
+  },
+  {
+    "_id": {
+      "$oid": "645ff96e5d58bcaeb18dc0de"
+    },
+    "title": "Producto de prueba 12",
+    "description": "Este es un producto de prueba",
+    "price": 40,
+    "thumbnail": "ruta/de/imagen",
+    "code": "ABC9",
+    "stock": 25,
+    "category": "segunda",
+    "status": "a"
+  },
+  {
+    "_id": {
+      "$oid": "64600cd40b1848db8b1c586f"
+    },
+    "title": "Producto de prueba 12",
+    "description": "Este es un producto de prueba",
+    "price": 40,
+    "thumbnail": "ruta/de/imagen",
+    "code": "ABC9",
+    "stock": 25,
+    "category": "segunda",
+    "status": "a"
+  },
+  {
+    "_id": {
+      "$oid": "64600cf90b1848db8b1c5873"
+    },
+    "title": "Producto de prueba 11",
+    "description": "Este es un producto de prueba",
+    "price": 40,
+    "thumbnail": "ruta/de/imagen",
+    "code": "ABC9",
+    "stock": 25,
+    "category": "segunda",
+    "status": "a"
+  }
+]

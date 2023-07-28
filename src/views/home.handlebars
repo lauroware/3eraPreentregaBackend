@@ -1,0 +1,107 @@
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bienvenido</title>
+    <style>
+      body { font-family: Arial, sans-serif; background-color: #f1f1f1; margin:
+      0; padding: 0; } h3 { text-align: center; background-color: #333; color:
+      white; padding: 10px; } h1 { text-align: center; } table { width: 100%;
+      border-collapse: collapse; margin-top: 20px; } th, td { border: 1px solid
+      #ccc; padding: 8px; text-align: center; } th { background-color: #333;
+      color: white; } button { background-color: #4CAF50; color: white; border:
+      none; padding: 10px 20px; text-align: center; text-decoration: none;
+      display: inline-block; font-size: 16px; margin: 4px 2px; cursor: pointer;
+      border-radius: 4px; } a { text-decoration: none; color: #4CAF50; } a:hover
+      { color: #45a049; } p { text-align: center; margin-top: 10px; }
+    </style>
+  </head>
+  <body>
+    <h3>Bienvenido
+      {{#if user}}
+        :
+        {{user.first_name}}
+        {{user.name}}
+        /
+        {{user.email}}
+        /
+        {{user.role}}
+        <div id="cartId">{{user.cart}}</div>
+        <a href="/api/sessions/logout"><button>Cerrar sesión</button></a>
+      {{/if}}
+    </h3>
+
+    <h1>Productos
+      {{#unless user}}
+        <a href="/register"><button>Registrarse</button></a>
+        <a href="/login"><button>Iniciar sesión</button></a>
+      {{/unless}}
+    </h1>
+
+    <div>
+      <br />
+      <table>
+        <tr>
+          <th>ID</th>
+          <th>Título</th>
+          <th>Descripción</th>
+          <th>Precio</th>
+          <th>Código</th>
+          <th>Stock</th>
+          <th>Categoría</th>
+          <th>Estado</th>
+        </tr>
+        <tbody>
+          {{#each products}}
+            <tr>
+              <td>{{this._id}}</td>
+              <td>{{this.title}}</td>
+              <td>{{this.description}}</td>
+              <td>{{this.price}}</td>
+              <td>{{this.code}}</td>
+              <td>{{this.stock}}</td>
+              <td>{{this.category}}</td>
+              <td>{{this.status}}</td>
+              <td>
+                <button data-product-id="{{this._id}}">Agregar al carrito</button>
+              </td>
+            </tr>
+          {{/each}}
+        </tbody>
+      </table>
+
+      {{#if hasPrevPage}}
+        <a
+          href="/?page={{prevPage}}&limit={{limit}}&sort={{sort}}&query={{queryParam}}"
+        ><button>Anterior</button></a>
+      {{/if}}
+      {{#if hasNextPage}}
+        <a
+          href="/?page={{nextPage}}&limit={{limit}}&sort={{sort}}&query={{queryParam}}"
+        ><button>Siguiente</button></a>
+      {{/if}}
+
+      <p>Página
+        {{#if hasPrevPage}}
+          <a
+            href="/?page={{prevPage}}&limit={{limit}}&sort={{sort}}&query={{queryParam}}"
+          >{{prevPage}}</a>
+        {{/if}}
+        {{page}}
+        {{#if hasNextPage}}
+          <a
+            href="/?page={{nextPage}}&limit={{limit}}&sort={{sort}}&query={{queryParam}}"
+          >{{nextPage}}</a>
+        {{/if}}
+      </p>
+
+      {{#if hasPrevPage}}
+        <a
+          href="/?page={{prevPage}}&limit={{limit}}&sort={{sort}}&query={{queryParam}}"
+        ><button>Anterior</button></a>
+      {{/if}}
+
+    </div>
+    <script src="/js/home.js"></script>
+  </body>
+</html>
